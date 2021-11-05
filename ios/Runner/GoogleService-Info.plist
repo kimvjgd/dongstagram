@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1068135694630-plu7hp2nonvjmjturhatg04fq9e13k6n.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1068135694630-plu7hp2nonvjmjturhatg04fq9e13k6n</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBw77N-vBbEQ5J3V79imigWRXe3ZfT7nu0</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1068135694630</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.waobab.dongstagram</string>
+	<key>PROJECT_ID</key>
+	<string>dongstagram-a79d0</string>
+	<key>STORAGE_BUCKET</key>
+	<string>dongstagram-a79d0.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1068135694630:ios:b6bb514b4e4af3da3501e7</string>
+</dict>
+</plist>

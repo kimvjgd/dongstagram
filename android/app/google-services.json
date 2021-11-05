@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1068135694630",
+    "project_id": "dongstagram-a79d0",
+    "storage_bucket": "dongstagram-a79d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068135694630:android:1283f6561afe1da83501e7",
+        "android_client_info": {
+          "package_name": "com.waobab.dongstagram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068135694630-1dnqp4hql5tku29uimvljv2ur1a3lfr0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyBLbskJqkVly9_WL8UZOP0d4K8wWu6rY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068135694630-1dnqp4hql5tku29uimvljv2ur1a3lfr0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
