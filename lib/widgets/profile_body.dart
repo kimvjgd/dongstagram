@@ -84,7 +84,7 @@ class _ProfileBodyState extends State<ProfileBody>
                     _selectedIndicator(),
                   ]),
                 ),
-                SliverToBoxAdapter(
+                SliverToBoxAdapter(                     // sliver에 일반적인 widget을 넣고 싶을때 slivertoboxadapter을 사용한다.
                     child: Stack(
                   children: [
                     AnimatedContainer(
@@ -150,10 +150,10 @@ class _ProfileBodyState extends State<ProfileBody>
 
   GridView _images() {
     return GridView.count(
-      shrinkWrap: true,
+      shrinkWrap: true,                                       // true로 안해놓으면 필요하지 않은 부분까지 공간을 차지해서 true 로 바꿔
       crossAxisCount: 3,
       childAspectRatio: 1,
-      physics: NeverScrollableScrollPhysics(),
+      physics: NeverScrollableScrollPhysics(),            // gridview에서는 scroll을 무시하고 위의 customscrollview에서만 scroll이 된다.
       children: List.generate(
           30,
           (index) => CachedNetworkImage(

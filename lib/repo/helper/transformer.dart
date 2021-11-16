@@ -48,7 +48,7 @@ class Transformers {
       }
   );
 
-  final combineListOfPosts = StreamTransformer<List<List<PostModel>>, List<PostModel>>.fromHandlers(
+  final combineListOfPosts = StreamTransformer<List<List<PostModel>>, List<PostModel>>.fromHandlers(        // List<List<PostModel>>을 List<PostModel>로 바꿔준다.
       handleData: (listOfPosts, sink) async {
 
         List<PostModel> posts = [];

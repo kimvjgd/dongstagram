@@ -3,7 +3,6 @@ import 'package:dongstagram/constant/common_size.dart';
 import 'package:dongstagram/constant/screen_size.dart';
 import 'package:dongstagram/models/firestore/post_model.dart';
 import 'package:dongstagram/models/user_model_state.dart';
-import 'package:dongstagram/repo/image_network_repository.dart';
 import 'package:dongstagram/repo/post_network_repository.dart';
 import 'package:dongstagram/screens/comments_screen.dart';
 import 'package:dongstagram/widgets/comment.dart';

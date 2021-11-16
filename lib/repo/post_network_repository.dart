@@ -47,6 +47,8 @@ class PostNetworkRepository with Transformers {
         .transform(toPosts);
   }
 
+
+
   Stream<List<PostModel>> fetchPostsFromAllFollowers(List<dynamic> followings) {
     final CollectionReference collectionReference = FirebaseFirestore.instance.collection(COLLECTION_POSTS);
     List<Stream<List<PostModel>>> streams = [];
@@ -57,6 +59,8 @@ class PostNetworkRepository with Transformers {
     // 이렇게 까지오면 List<Stream<List<PostModel>>>로 오는데 다시 List<PostModel>로 바꿔줘야한다(combinListOfPosts이용)
     return CombineLatestStream.list<List<PostModel>>(streams).transform(combineListOfPosts).transform(latestToTop);
   }
+
+
 
   Future<void> toggleLike(String postKey, String userKey) async{
     final DocumentReference postRef = FirebaseFirestore.instance.collection(COLLECTION_POSTS).doc(postKey);

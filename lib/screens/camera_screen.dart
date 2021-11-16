@@ -14,7 +14,7 @@ class CameraScreen extends StatefulWidget {
   @override
   // _CameraScreenState createState() => _CameraScreenState();
   _CameraScreenState createState() {
-    _cameraState.getReadyToTakePhoto();
+    _cameraState.getReadyToTakePhoto();         // 최대한 빨리 준비해준다.
     _galleryState.initProvider();
     return _CameraScreenState();
   }

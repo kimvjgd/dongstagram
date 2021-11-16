@@ -15,7 +15,7 @@ class FeedScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return StreamProvider<List<PostModel>>.value(
+    return StreamProvider<List< PostModel>>.value(
       initialData: [],
       value: postNetworkRepository.fetchPostsFromAllFollowers(followings),
       child: Consumer<List<PostModel>>(

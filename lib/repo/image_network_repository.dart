@@ -7,7 +7,7 @@ import 'package:flutter/foundation.dart';
 class ImageNetworkRepository {
   Future<TaskSnapshot?> uploadImage(File originImage, {required String postKey}) async{
     try {
-      final File resized = await compute(getResizedImage, originImage);
+      final File resized = await compute(getResizedImage, originImage);     // compute <- isolate
       final Reference storageReference = FirebaseStorage.instance.ref().child(_getImagePathByPostKey(postKey));
       final UploadTask uploadTask = storageReference.putFile(resized);
       return uploadTask.onComplete;

@@ -118,7 +118,8 @@ class _SharePostScreenState extends State<SharePostScreen> {
 
     UserModel usermodel = Provider.of<UserModelState>(context,listen: false).userModel;
 
-    await postNetworkRepository.createNewPost(widget.postKey, PostModel.getMapForCreatePost(userKey: usermodel.userKey, username: usermodel.username, caption: _textEditingController.text));
+    await postNetworkRepository.createNewPost(widget.postKey, PostModel.getMapForCreatePost(
+        userKey: usermodel.userKey, username: usermodel.username, caption: _textEditingController.text));
     await Future.delayed(Duration(seconds: 3));
     String postImgLink = await imageNetworkRepository.getPostImageUrl(widget.postKey);
     await postNetworkRepository.updatePostImageUrl(postImg: postImgLink, postKey: widget.postKey);
